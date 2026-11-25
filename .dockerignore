@@ -1,0 +1,26 @@
+# Keep the build context small.
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+
+# Secrets: the build args are the single source of truth inside the image.
+# A stray local .env would otherwise be baked into the bundle.
+.env
+.env.*
+!.env.example
+
+# Not needed to produce the bundle
+docs/
+README.md
+.gitignore
+.eslintcache
+vercel.json
+firebase.json
+
+# Logs / OS noise
+logs/
+*.log
+.DS_Store
+Thumbs.db
